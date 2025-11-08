@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Active Target",
+            "type": "lldb",
+            "request": "launch",
+            "preLaunchTask": "build-active-preset",
+            "program": "${command:cmake.launchTargetPath}",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

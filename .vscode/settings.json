@@ -1,0 +1,5 @@
+{
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    // "cmake.cmakePath": "C:/Qt/Tools/CMake_64/bin/cmake.exe", // enabled this if you want to use specific cmake
+    "cmake.useCMakePresets": "always"
+}
