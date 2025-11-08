@@ -19,7 +19,7 @@ Makefile
 *.lib
 
 # IDE/editor directories and files
-/.vscode/
+# /.vscode/ # Commented out to track VS Code settings
 *.user
 *.suo
 *.swp

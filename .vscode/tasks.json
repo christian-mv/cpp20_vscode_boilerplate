@@ -3,6 +3,7 @@
     "tasks": [
         {
             "label": "build-active-preset",
+            "type": "shell",
             "command": "cmake",
             "args": [
                 "--build",
@@ -13,8 +14,28 @@
                 "isDefault": true
             },
             "problemMatcher": [
-                "$gcc"
-            ]
+                "$msCompile"
+            ],
+            "presentation": {
+                "reveal": "silent",
+                "clear": true
+            }
+        },
+        {
+            "label": "clean-build-directory",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${command:cmake.buildDirectory}",
+                "--target",
+                "clean"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "clear": true
+            }
         }
     ]
 }
